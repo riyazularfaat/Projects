@@ -1,0 +1,35 @@
+.project-container{
+    margin-top: 30px;
+}
+
+.title-project{
+    text-transform: uppercase;
+}
+.projects{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.projects img{
+    width: 100%;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: gray;
+    color: #fff;
+    border-top: 1px solid var(--backgroung-color);
+    border-bottom: 1px solid var(--backgroung-color);
+    border-radius: 5px;
+}
+.blog-container{
+    margin-top: 30px;
+    
+}
+@media only screen and (min-width: 200px) and (max-width: 576px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
