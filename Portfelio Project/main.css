@@ -1,5 +1,6 @@
+/* Project part start */
 .project-container{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .title-project{
@@ -14,22 +15,230 @@
 .projects img{
     width: 100%;
 }
+.summit-bitton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 button{
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: gray;
+    padding: 15px 20px;
+    background-color: transparent;
     color: #fff;
-    border-top: 1px solid var(--backgroung-color);
-    border-bottom: 1px solid var(--backgroung-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
 }
+button:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+/* Project part end */
+
+/* ================================================== */
+
+/* Blog part start */
 .blog-container{
-    margin-top: 30px;
+    margin-top: 50px;
+}
+.blogs{
+    margin-top: 20px;
+    display: flex;
+    justify-items: space-between;
+    gap: 20px;
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-desc{
+    margin: 2%;
+    width: fit-content;
+}
+
+.blog-title{
+    margin: 2% 0%;
+    background-color: var(--primary-font);
+    border-radius: 50px;
+    text-align: center;
+    padding: 17px 30px;
+    width: fit-content;
+}
+.blog-title h1{
+    color: black;
+}
+.blog-detail{
+    display: flex;
+    gap: 10px;
+    margin: 2% 0px;
+}
+
+/* Blog part end */
+/* ================================================== */
+
+/* Testimonial part start */
+.testimonial-container{
+    height: 100%;
+    margin-top: 3%;
+}
+.testimonial-title-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial-title h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight:bolder;
+    color: rgba(128, 9, 128, 0.87);
+}
+.testimonial-desc{
+    margin: 15px;
+    width: 70%;
+    text-align: center;
+}
+.testimonials{
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    gap: 1.5%;
+}
+
+.left-card-top{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     
 }
+.left-single-card{
+    display: flex;
+}
+.testimonial-card-box{
+    background-image: linear-gradient(to bottom right, #5E4AF1 7%, #9908cdb9 70%);
+    padding: 20px;
+}
+.testimonial-card-desc {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.img-right{
+    width: 100%;
+    height: auto;
+}
+.right-card-box{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #5E4AF1 7%, #9908cdb9 70%);
+    padding: 20px;
+}
+.right-card-desc{
+    margin-top: 30px;
+}
+/* Testimonial part end */
+
+/* footer part start */
+.footer-container{
+    margin-top: 40px;
+    background-image: linear-gradient(to bottom right, #5d4af1df, #b90bf9c1);
+    padding: 20px;
+}
+.feedback-section{
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+.feedback-section h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+.feedback-form{
+    width: 50%;
+}
+form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+#message{
+    margin-top: 20px;
+}
+button{
+    padding: 15px 50px;
+    background-color: transparent;
+    color: #fff;
+    width: fit-content;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 0px 40%;
+}
+.contact-details{
+    margin-top: 40px;
+}
+.social-media{
+    margin-top: 30px;
+    display: flex;
+    padding: 0px 0px;
+    justify-content: space-between;
+}
+.social-media img{
+    width: 50px;
+}
+
+/* footer part end */
 @media only screen and (min-width: 200px) and (max-width: 576px){
     .projects{
         display: flex;
         flex-direction: column;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials img{
+        width: 100%;
+    }
+    .left-card-top{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .left-single-card{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-card-box{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .feedback-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .feedback-form{
+        width: 100%;
+        padding-right: 20px;
     }
 }
